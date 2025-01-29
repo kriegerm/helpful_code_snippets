@@ -1,1 +1,5 @@
+#Make a blast db
+makeblastdb -dbtype nucl -in StrepGenomes_62.fasta -out blastdb/StrepGenomesnucl
+
+#Run a blast search
 blastn -db nt -query <query.fasta> -out <out.fasta> -task blastn -max_hsps 1 -outfmt ‘6 qseqid sscinames sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qseq sseq sstrand’
