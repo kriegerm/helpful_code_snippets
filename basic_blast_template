@@ -1,0 +1,1 @@
+blastn -db nt -query <query.fasta> -out <out.fasta> -task blastn -max_hsps 1 -outfmt ‘6 qseqid sscinames sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qseq sseq sstrand’
